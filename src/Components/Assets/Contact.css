@@ -1,0 +1,97 @@
+/* Main Contact Section */
+.contact {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Container for centering the contact form */
+.contact .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contact Form */
+form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input Fields */
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input focus effect */
+form input:focus,
+form textarea:focus {
+  border-color: #333;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Label Styling */
+form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+}
+
+/* Button Styling */
+button {
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #007bff;
+}
+
+/* Form Fields on Small Screens (Mobile Responsive) */
+@media (max-width: 768px) {
+  form {
+    padding: 30px;
+  }
+
+  form input,
+  form textarea {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 12px 20px;
+  }
+}

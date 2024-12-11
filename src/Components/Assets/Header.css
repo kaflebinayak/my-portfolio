@@ -1,0 +1,72 @@
+/* Header Section */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 100px 0; /* Vertical padding for larger header space */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container for centering the content inside header */
+.header .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Main header title styling */
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Subtitle styling */
+.header p {
+  font-size: 1.25rem;
+  color: #bbb;
+  font-weight: 400;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+/* Optional: Adding a subtle animated background effect */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://source.unsplash.com/1600x900/?technology,web")
+    center/cover no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+  animation: backgroundAnimation 20s infinite linear;
+}
+
+/* Keyframe animation for background */
+@keyframes backgroundAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile responsiveness for the header */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,64 @@
+/* About Section */
+.about {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Container for centering the About content */
+.about .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* About Heading */
+.about h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* About Description Styling */
+.about p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: Add an image of yourself with styling */
+.about img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 40px;
+  border: 5px solid #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for image */
+.about img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section on Small Screens (Mobile Responsive) */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about img {
+    width: 150px;
+    height: 150px;
+  }
+}
